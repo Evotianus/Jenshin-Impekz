@@ -1,0 +1,726 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Courier, monospace;
+}
+
+@font-face {
+    font-family: 'HYWenHei 85W';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HYWenHei 85W'), url('Assets/Font/zhcn.woff') format('woff');
+}
+
+.navbar {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-image: url(Assets/Components/Homepage/Navbar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh;
+    width: 100vw;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    z-index: 5;
+}
+
+.navbar img {
+    position: relative;
+}
+
+.navbar .menu-list a {
+    color: white;
+    opacity: 0.75;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.navbar .menu-list a[data-active] {
+    opacity: 1;
+    border-bottom: 2px solid #FFCF0D;
+}
+
+.navbar .menu-list a:hover {
+    opacity: 1;
+    border-bottom: 2px solid #FFCF0D;
+}
+
+.navbar .menu-list ul {
+    display: flex;
+    gap: 3vw;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #222222;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    gap: 3vh;
+    color: white;
+}
+
+footer hr {
+    margin: 5vh 0;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer span {
+    color: red;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link {
+    display: flex;
+    gap: 4vw;
+    font-size: 20px;
+}
+
+.footer-link a {
+    color: white;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.footer-link a:hover {
+    opacity: 1;
+}
+
+.footer-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Home Page - End */
+/* ================================================================================================================================ */
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Assets/Homepage/Jumbotron/Jumbotron.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25vh;
+    padding: 0 15vh;
+}
+
+.jumbotron .main-header p {
+    margin: 5vh 0;
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+}
+
+.jumbotron .main-header button {
+    padding: 21px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FFCF0D;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.jumbotron .main-header button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.download {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: end;
+}
+
+.jumbotron-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: white;
+    gap: 1vw;
+    transition: all 0.2s;
+}
+
+.playstation-button {
+}
+
+.jumbotron-button:hover {
+    background-color: rgba(00, 0, 0, 1);
+    cursor: pointer;
+}
+
+.playstation-button img{
+    width: 8vw;
+    height: 4vh;
+}
+
+.googleplay-button img {
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.windows-button img {
+    width: 2.5vw;
+}
+
+.windows-button p {
+    font-size: 20px;
+}
+
+.news::after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    pointer-events: none;
+}
+
+.news {
+    position: relative;
+    background-image: url(Assets/Homepage/News/Background.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-container {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 75vw;
+    height: 50vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.news-carousel {
+    position: relative;
+    flex: 1;
+    width: 50%;
+    height: 100%;
+}
+
+.news-carousel ul {
+    height: 100%;
+}
+
+.slide {
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.news-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-latest {
+    padding: 2vh 2vw;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-latest hr {
+    margin: 2vh 0;
+    opacity: 15%;
+}
+
+.news-latest-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-latest-text span {
+    opacity: 25%;
+}
+/* Home Page - End */
+/* ================================================================================================================================ */
+
+
+/* Register Page - Start */
+/* ================================================================================================================================ */
+.register-container::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+}
+
+.register-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Assets/Register/Background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.register-form {
+    position: absolute;
+    background-color: white;
+    width: 70vw;
+    height: 65vh;
+    border-radius: 10px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+.register-image {
+    position: relative;
+    flex: 1;
+    background-image: url(Assets/Register/Side-Image.jpg);
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 10px 0 0 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 2vh 2vw;
+}
+
+.register-image p {
+    font-size: 32px;
+    color: white;
+}
+
+.register-input {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.register-input p {
+    font-size: 24px;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-input input {
+    padding: 8px 16px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    font-family: "poppins";
+}
+
+.row-input {
+    display: flex;
+    gap: 2vw;
+}
+
+.row-input-single {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.row-input-single input {
+    padding: 8px 16px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    font-family: "poppins";
+}
+
+.input-button {
+    width: 100%;
+    padding: 1.5vh;
+    border: none;
+    border-radius: 5px;
+    background: #FFCF0D;
+    font-size: 18px;
+    font-family: "poppins";
+}
+
+/* Register Page - End */
+/* ================================================================================================================================ */
+
+/* About Game Page - Start */
+/* ================================================================================================================================ */
+
+.about-wrapper::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+    /* padding: 20vh 0; */
+}
+
+.about-wrapper {
+    position: relative;
+    background-image: url(Assets/About-Game/Background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container {
+    padding: 20vh 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.about-box {
+    display: flex;
+    /* justify-content: center; */
+    background-color: white;
+    width: 80vw;
+    height: 45vh;
+    z-index: 2;
+}
+
+.about-text-container {
+    width: 30%;
+    border: 2px solid #FFCF0D;
+    margin: 2vh;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.about-text-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-text-paragraph {
+    font-size: 16px;
+}
+
+.about-image {
+    background-image: url(Assets/About-Game/Image-1.jpg);
+    background-size: cover;
+    width: 70%;
+}
+
+/* About Game Page - End */
+/* ================================================================================================================================ */
+
+/* Maps Page - Start */
+/* ================================================================================================================================ */
+
+.maps-teyvat::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-list { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.maps-teyvat {
+    background-image: url(Assets/Maps/Teyvat.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-content {
+    z-index: 1;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.maps-mondstadt::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-mondstadt {
+    background-image: url(Assets/Maps/Mondstadt.png);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-liyue::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-liyue {
+    background-image: url(Assets/Maps/Liyue.png);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-inazuma::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-inazuma {
+    background-image: url(Assets/Maps/Inazuma.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-sumeru::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-sumeru {
+    background-image: url(Assets/Maps/Sumeru.png);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-title {
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.maps-content hr {
+    width: 60vh;
+
+}
+
+.maps-list img {
+    width: 5vw;
+}
+
+.close-button {
+    font-size: 36px;
+    padding: 1rem;
+    margin: 2vh 2vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.map-detail-teyvat {
+    background-image: url(Assets/Maps/Teyvat-map.png);
+    background-size: cover;
+    background-position: right center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    scale: 0;
+    transition: ease-out 0.2s;
+}
+
+.map-detail-teyvat[data-active] {
+    scale: 1;
+    transition: ease-out 0.2s;
+}
+
+.map-container {
+
+}
+
+/* Maps Page - End */
+/* ================================================================================================================================ */
+
+/* Characters Page - Start */
+/* ================================================================================================================================ */
+.characters::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.characters {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-image: url(Assets/Characters/Background.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.characters-detail {
+    position: absolute;
+    z-index: 2;
+    background-image: url(Assets/Characters/Character-1.png);
+    background-size: cover;
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 20vh 0;
+    color: white;
+    gap: 3vh;
+    transition: all 0.2s;
+}
+
+.characters-name {
+    border-left: 2px solid #FFCF0D;
+    padding: 0 3vh;
+}
+
+.characters-name p {
+    font-size: 64px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.characters-description {
+    display: flex;
+    align-items: start;
+    gap: 2vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 45%;
+    padding: 2vh;
+    transition: all 0.2s;
+}
+
+.characters-description img {
+    margin: 1vh 0;
+}
+
+.characters-list {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 25vh;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.characters-card {
+    display: flex;
+    flex-direction: column;
+    width: 7vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.characters-card[data-active] {
+    outline: 2px solid white;
+}
+
+.characters-card[data-active] .card-name {
+    background-color: white;
+    color: black;
+}
+
+.card-name {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.5vh 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.characters-card:hover {
+    outline: 2px solid white;
+    /* background-color: white; */
+}
+
+.characters-card:hover .card-name {
+    background-color: white;
+    color: black;
+}
