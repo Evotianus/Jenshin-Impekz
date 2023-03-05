@@ -37,6 +37,10 @@ body {
     position: relative;
 }
 
+.navbar .menu-icon {
+    display: none;
+}
+
 .navbar .menu-list a {
     color: white;
     opacity: 0.75;
@@ -108,6 +112,31 @@ footer span {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 576px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: none;
+        height: 10%;
+    }
+
+    .navbar .menu-list {
+        display: none;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+        color: white;
+    }
+    
+    .navbar .menu-icon i {
+        font-size: 2rem;
+    }
+
+    .navbar .logo {
+        color: white;
+    }
+}
+
 /* Home Page - End */
 /* ================================================================================================================================ */
 .jumbotron {
@@ -118,20 +147,25 @@ footer span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 25vh;
-    padding: 0 15vh;
+    gap: 15vh;
+    padding: 0 20vh;
+    padding-bottom: 5vh;
+}
+
+.jumbotron .main-header {
+    margin-top: 15vh;
 }
 
 .jumbotron .main-header p {
     margin: 5vh 0;
-    font-size: 64px;
-    font-weight: bold;
+    font-size: 56px;
+    font-weight: 1000;
     color: white;
 }
 
 .jumbotron .main-header button {
     padding: 21px 40px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     background-color: #FFCF0D;
     border: none;
@@ -154,7 +188,7 @@ footer span {
 .jumbotron-button {
     display: flex;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
@@ -173,7 +207,7 @@ footer span {
 
 .playstation-button img{
     width: 8vw;
-    height: 4vh;
+    height: 3vh;
 }
 
 .googleplay-button img {
@@ -212,7 +246,7 @@ footer span {
     position: absolute;
     background: rgba(0, 0, 0, 0.3);
     width: 75vw;
-    height: 50vh;
+    height: 55vh;
     z-index: 3;
     display: flex;
     flex-direction: row;
@@ -227,6 +261,7 @@ footer span {
 }
 
 .news-carousel ul {
+    list-style-type: none;
     height: 100%;
 }
 
@@ -258,6 +293,12 @@ footer span {
     justify-content: center;
 }
 
+.latest-header {
+    font-size: 24px;
+    border-left: 2px solid #FFCF0D;
+    padding-left: 1vw;
+}
+
 .news-latest hr {
     margin: 2vh 0;
     opacity: 15%;
@@ -270,6 +311,63 @@ footer span {
 
 .news-latest-text span {
     opacity: 25%;
+}
+
+@media screen and (max-width: 576px) {
+    .jumbotron {
+        padding: 0 10vh;
+        padding-bottom: 5vh;
+    }
+
+    .jumbotron .main-header {
+        margin-top: 2vh;
+    }
+
+    .jumbotron .main-header p {
+        font-size: 36px;
+    }
+
+    .jumbotron .main-header button {
+        padding: 20px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #FFCF0D;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.2s;
+    }
+    
+    .jumbotron .main-header button:hover {
+        background-color: #000000;
+        color: white;
+    }
+
+    .download {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: end;
+    }
+
+    .jumbotron-button {
+        min-height: 30%;
+        min-width: 40%;
+    }
+
+    .playstation-button img{
+        width: 80%;
+        height: 3vh;
+    }
+
+    .googleplay-button img {
+        width: 5vw;
+        height: 5vh;
+    }
+
+    .windows-button img {
+        width: 4.5vw;
+    }
 }
 /* Home Page - End */
 /* ================================================================================================================================ */
@@ -301,12 +399,13 @@ footer span {
 .register-form {
     position: absolute;
     background-color: white;
-    width: 70vw;
-    height: 65vh;
+    width: 75vw;
+    height: 75vh;
     border-radius: 10px;
     z-index: 3;
     display: flex;
     flex-direction: row;
+    margin-top: 6vh;
 }
 
 .register-image {
@@ -326,22 +425,23 @@ footer span {
 
 .register-image p {
     font-size: 32px;
+    font-weight: bold;
     color: white;
 }
 
 .register-input {
+    padding: 2em;
     flex: 1;
     width: 50%;
-    height: 100%;
-    padding: 2vh 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3vh;
+    gap: 4vh;
 }
 
 .register-input p {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .user-input {
@@ -350,7 +450,7 @@ footer span {
 }
 
 .user-input input {
-    padding: 8px 16px;
+    padding: 6px 12px;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     width: 100%;
@@ -647,7 +747,7 @@ footer span {
     width: 80%;
     display: flex;
     flex-direction: column;
-    padding: 20vh 0;
+    padding: 10vh 0;
     color: white;
     gap: 3vh;
     transition: all 0.2s;

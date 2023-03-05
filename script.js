@@ -79,16 +79,16 @@ setTimeout(() => {
     const characterImage = document.querySelector(".characters-detail")
     const characterList = document.querySelectorAll(".characters-card")
     
-    // console.log(characterList)
     characterList.forEach((character, index) => {
         character.addEventListener('click', () => {
-            const activeCharacter = document.querySelector("[data-active]")
+            const activeCharacter = document.querySelector(".characters-list [data-active]")
             // console.log(index)
             characterName.innerHTML = mondstadtName[index]
             characterDescription.innerHTML = mondstadtDescription[index]
             characterImage.style.backgroundImage = "url('" + mondstadtImage[index] + "')"
 
-            delete activeCharacter.dataset.active   
+            console.log(activeCharacter.dataset)
+            delete activeCharacter.dataset.active
             characterList[index].dataset.active = true
         })
     })
