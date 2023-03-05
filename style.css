@@ -315,7 +315,7 @@ footer span {
 
 @media screen and (max-width: 576px) {
     .jumbotron {
-        padding: 0 10vh;
+        padding: 0 5vh;
         padding-bottom: 5vh;
     }
 
@@ -351,12 +351,12 @@ footer span {
     }
 
     .jumbotron-button {
-        min-height: 30%;
-        min-width: 40%;
+        height: 30%;
+        width: 40%;
     }
 
     .playstation-button img{
-        width: 80%;
+        width: 70%;
         height: 3vh;
     }
 
