@@ -34,11 +34,13 @@ setTimeout(() => {
     // Maps - Modal / Pop up
     const openModalButtons = document.querySelectorAll("[data-modal-target]")
     const closeModalButtons = document.querySelectorAll("[data-modal-close]")
+    const mapDetail = document.querySelector(".map-detail")
 
     openModalButtons.forEach(button => {
         button.addEventListener('click', () => {
             const modal = document.querySelector(button.dataset.modalTarget)
-
+            // mapDetail.style.visibility = "visible"
+            
             openModal(modal)
         })
     })
@@ -46,6 +48,7 @@ setTimeout(() => {
     closeModalButtons.forEach(button => {
         button.addEventListener('click', () => {
             const modal = button.closest(".modal")
+            // mapDetail.style.visibility = "hidden"
 
             closeModal(modal)
         })
@@ -112,7 +115,7 @@ setTimeout(() => {
 
             console.log(activeCharacter.dataset)
             delete activeCharacter.dataset.active
-            characterList[index].dataset.active = true
+            mondstadtCharacterList[index].dataset.active = true
         })
     })
 
@@ -595,7 +598,7 @@ setTimeout(() => {
             isValid = 0
         }
         
-        if (inputAge < 12) {
+        if (inputAge.value < 12) {
             console.log("Error Age")
             errorText += "- Umur minimal 12 tahun!<br>"
             isValid = 0
@@ -609,16 +612,16 @@ setTimeout(() => {
 
         if (!isValid) {
             errorNotification.innerHTML = errorText
-            errorElement.style.bottom = "3vh"
+            errorElement.style.right = "3vh"
 
             setTimeout(() => {
-                errorElement.style.bottom = "-100vh"
+                errorElement.style.right = "-100%"
             }, 4000);
         } else {
-            successElement.style.bottom = "3vh"
+            successElement.style.right = "3vh"
             
             setTimeout(() => {
-                successElement.style.bottom = "-100vh"
+                successElement.style.right = "-100%"
             }, 4000);
         }
     })

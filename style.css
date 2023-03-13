@@ -20,7 +20,7 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     background-image: url(Assets/Components/Homepage/Navbar.png);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     height: 15vh;
@@ -71,6 +71,20 @@ body {
 
 .menu-icon-list {
     display: none;
+}
+
+@media screen and (max-width: 1140px) {
+    .navbar {
+        padding: 3vh 3vw;
+    }
+
+    .navbar .menu-list a {
+        font-size: 1.05rem;
+    }
+
+    .logo img {
+        width: 15vw;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -189,6 +203,20 @@ footer span {
 .footer-description {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1140px) {
+    /* .footer-logo img {
+        width: 40%;
+    } */
+
+    .footer-link a {
+        font-size: 1rem;
+    }
+
+    footer hr {
+        margin: 2vh 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -387,6 +415,82 @@ footer span {
     opacity: 25%;
 }
 
+@media screen and (max-width: 1140px) {
+    .jumbotron {
+        padding: 0vh 8vw;
+        padding-top: 6vh;
+        gap: 5vh;
+    }
+
+    .jumbotron .main-header {
+        margin-top: 3vh;
+    }
+
+    .jumbotron .main-header button {
+        padding: 20px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #FFCF0D;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.2s;
+    }
+    
+    .jumbotron .main-header button:hover {
+        background-color: #000000;
+        color: white;
+    }
+    
+    .download {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        /* height: 100%; */
+        align-items: end;
+    }
+
+    .jumbotron-button {
+        height: 30%;
+        min-width: 30vw;
+        /* max-width: 3vw; */
+        /* width: 40vw; */
+    }
+
+    .playstation-button img{
+        /* width: 70%; */
+        height: 3vh;
+    }
+
+    .googleplay-button img {
+        width: 5vw;
+        height: 5vh;
+        margin-right: 1vw;
+    }
+    
+    .windows-button img {
+        width: 4.5vw;
+        margin-right: 1vw;
+    }
+
+    .news-container {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-container {
+        height: 80vh;
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    .news-carousel {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .jumbotron {
         padding: 0 5vh;
@@ -504,6 +608,7 @@ footer span {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    overflow-x: hidden;
 }
 
 .register-form {
@@ -534,6 +639,8 @@ footer span {
 }
 
 .register-image p {
+    position: absolute;
+    bottom: 0;
     font-size: 32px;
     font-weight: bold;
     color: white;
@@ -630,8 +737,8 @@ footer span {
     background-color: rgb(246, 80, 80);
     padding: 2vh 3vw;
     border-radius: 10px;
-    bottom: -100vh;
-    right: 2vw;
+    bottom: 2vh;
+    right: -100%;
     width: 40vw;
     z-index: 10;
     transition: all 0.5s;
@@ -640,14 +747,40 @@ footer span {
 
 .success-container {
     position: absolute;
-    background-color: greenyellow;
+    background-color: rgb(57, 202, 57);
+    color: white;
     padding: 2vh 3vw;
     border-radius: 10px;
-    bottom: -100vh;
-    right: 2vw;
+    bottom: 2vh;
+    right: -100%;
     width: 40vw;
     z-index: 10;
     transition: all 0.5s;
+}
+
+@media screen and (max-width: 1140px) {
+    .register-form {
+        width: 80vw;
+    }
+    
+    .agreement-container p {
+        margin-left: 0.5vw;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .register-form {
+        width: 90vw;
+    }
+
+    .register-image {
+        background-position: 30%;
+    }
+
+    .agreement-container p {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -774,6 +907,39 @@ footer span {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1140px) {
+    .about-container {
+        align-items: center;
+    }
+
+    .about-box {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .about-text-container {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-box {
+        width: 95%;
+    }
+
+    .about-text-container {
+        width: 50%;
+    }
+
+    .about-text-header {
+        font-size: 22px;
+    }
+
+    .about-text-paragraph {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -956,6 +1122,7 @@ footer span {
     justify-content: end;
     scale: 0;
     transition: ease-out 0.2s;
+    /* visibility: hidden; */
 }
 
 .map-detail-teyvat {
@@ -1211,6 +1378,20 @@ footer span {
 
 .responsive-character-button {
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .characters-detail {
+        width: 95%;
+    }
+
+    .characters-name {
+        /* margin-left: 1vw; */
+    }
+
+    .characters-card {
+        width: 10vw;
+    }
 }
 
 @media screen and (max-width: 576px) {
