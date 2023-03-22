@@ -1,0 +1,240 @@
+/* Maps Page - Start */
+/* ================================================================================================================================ */
+
+.maps-teyvat::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.maps-list { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    scroll-snap-align: start;
+}
+
+.maps-teyvat {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Teyvat.jpg?raw=true);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-content {
+    z-index: 1;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.maps-mondstadt::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-mondstadt {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Mondstadt.png?raw=true);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-liyue::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-liyue {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Liyue.png?raw=true);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-inazuma::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-inazuma {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Inazuma.jpg?raw=true);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-sumeru::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-sumeru {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Sumeru.png?raw=true);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.maps-title {
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.maps-content hr {
+    width: 60%;
+}
+
+.maps-list img {
+    width: 5vw;
+}
+
+.close-button {
+    font-size: 36px;
+    padding: 1rem;
+    margin: 2vh 2vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.map-detail {
+    background-size: cover;
+    background-position: right center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    scale: 0;
+    transition: ease-out 0.2s;
+    /* visibility: hidden; */
+}
+
+.map-detail-teyvat {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Teyvat-map.png?raw=true);
+}
+
+.map-detail-mondstadt {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Mondstadt-map.jpg?raw=true);
+}
+
+.map-detail-liyue {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Liyue-map.png?raw=true);
+}
+
+.map-detail-inazuma {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Inazuma-map.png?raw=true);
+}
+
+.map-detail-sumeru {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Sumeru-map.png?raw=true);
+}
+
+.map-detail-teyvat[data-active] {
+    scale: 1;
+    transition: ease-out 0.2s;
+}
+
+.map-detail-mondstadt[data-active] {
+    scale: 1;
+    transition: ease-out 0.2s;
+}
+
+.map-detail-liyue[data-active] {
+    scale: 1;
+    transition: ease-out 0.2s;
+}
+
+.map-detail-inazuma[data-active] {
+    scale: 1;
+    transition: ease-out 0.2s;
+}
+
+.map-detail-sumeru[data-active] {
+    scale: 1;
+    transition: ease-out 0.2s;
+}
+
+.maps-content button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: white;
+    font-family: 'poppins';
+}
+
+.maps-content button:hover {
+    scale: 1.3;
+}
+
+.maps-content button img {
+    width: 3vw;
+}
+
+.maps-footer {
+    scroll-snap-align: start;
+}
+
+@media screen and (max-width: 576px) {
+    .maps-title {
+        font-size: 3em;
+    }
+
+    .maps-content {
+        width: 90vw;
+    }
+
+    .maps-list img {
+        width: 15vw;
+    }
+
+    .maps-liyue {
+        background-position: 40%;
+    }
+
+    .maps-sumeru {
+        background-position: 30%;
+    }
+
+    .maps-content button img {
+        width: 8vw;
+    }
+}
+
+/* Maps Page - End */
+/* ================================================================================================================================ */

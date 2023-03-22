@@ -7,22 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-register.css">
+    <link rel="stylesheet" href="styles/style-navbar-component.css">
+    <link rel="stylesheet" href="styles/style-footer-component.css">
     <title>Register Page</title>
 
-    <script src="script.js"></script>
+    <script src="scripts/script-register.js" defer></script>
+    <script src="scripts/script-navbar-component.js" defer></script>
     <script src="https://kit.fontawesome.com/c084ee8667.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="navbar-container">
         <div class="navbar">
-            <!-- <img src="Assets/Components/Homepage/Navbar.png" alt=""> -->
+            <!-- <img src="https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Components/Homepage/Navbar.png?raw=true" alt=""> -->
             <div class="menu-icon">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="logo">
                 <a href="index.html">
-                    <img src="Assets/Homepage/Navbar/logo.png" alt="">
+                    <img src="https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Homepage/Navbar/logo.png?raw=true" alt="">
                 </a>
             </div>
             <div class="menu-list">
@@ -59,26 +63,31 @@
                 <div class="user-input">
                     <label for="name">Name</label>
                     <input type="text" class="input-name" name="name" placeholder="Input your name...">
+                    <p class="error-message"></p>
                 </div>
                 <div class="user-input">
                     <label for="email">Email</label>
                     <input type="email" class="input-email" name="email" placeholder="Input your email...">
+                    <p class="error-message"></p>
                 </div>
                 <div class="user-input">
                     <label for="password">Password</label>
                     <input type="password" class="input-password" name="password" placeholder="Input your password...">
+                    <p class="error-message"></p>
                 </div>
                 <div class="row-input">
                     <div class="row-input-single row-input-age">
                         <label for="age">Age</label>
                         <input type="number" class="input-age" name="age" placeholder="Input your age...">
+                        <p class="error-message"></p>
                     </div>
                     <div class="row-input-single row-input-agreement">
                         <label for="agreement">Agreement</label>
                         <div class="agreement-container">
-                            <input type="checkbox" class="input-agreement">
-                            <p>Agree with term & condition</p>
+                            <input type="checkbox" class="input-agreement" id="agreement-check">
+                            <label for="agreement-check">Agree with term & condition</label>
                         </div>
+                        <p class="error-message"></p>
                     </div>
                 </div>
                 <button type="submit" class="input-button">Register Account</button>
@@ -96,10 +105,10 @@
     <footer>
         <div class="footer-logo">
             <div class="logo">
-                <img src="Assets/Homepage/Navbar/logo.png" alt="">
+                <img src="https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Homepage/Navbar/logo.png?raw=true" alt="">
             </div>
             <div>
-                <img src="Assets/Homepage/Footer/Teen-Logo.png" alt="" width="150">
+                <img src="https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Homepage/Footer/Teen-Logo.png?raw=true" alt="" width="150">
             </div>
         </div>
         <div class="footer-link">
@@ -112,7 +121,7 @@
         <hr>
         <div class="footer-description">
             <p>Copyright © Evotianus, All right reserved. Made with <span><i class="fa-solid fa-heart"></i></span></p>
-            <img src="Assets/Homepage/Footer/Hoyoverse-logo.png" alt="" width="300">
+            <img src="https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Homepage/Footer/Hoyoverse-logo.png?raw=true" alt="" width="300">
         </div>
     </footer>
 </body>

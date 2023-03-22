@@ -1,0 +1,243 @@
+/* Characters Page - Start */
+/* ================================================================================================================================ */
+.characters-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.characters::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.characters {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.characters-mondstadt {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Background-Mondstadt.jpg?raw=true);
+}
+
+.characters-liyue {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Background-Liyue.jpg?raw=true);
+}
+
+.characters-inazuma {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Background-Inazuma.jpg?raw=true);
+}
+
+.characters-sumeru {
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Background-Sumeru.jpg?raw=true);
+}
+
+.characters-region {
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    text-align: right;
+    /* left: vw; */
+}
+
+.characters-region p {
+    opacity: 75%;
+}
+
+.characters-region h1 {
+    font-size: 3em;
+}
+
+.characters-detail {
+    position: absolute;
+    z-index: 2;
+    /* background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Chara    cter-1.png?raw=true); */
+    background-size: cover;
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 0;
+    color: white;
+    gap: 3vh;
+    transition: all 0.2s;
+}
+
+.characters-name {
+    border-left: 2px solid #FFCF0D;
+    padding: 0 3vh;
+}
+
+.characters-name p {
+    font-size: 64px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.characters-description {
+    display: flex;
+    align-items: start;
+    gap: 2vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 45%;
+    padding: 2vh;
+    transition: all 0.2s;
+}
+
+.characters-description img {
+    margin: 1vh 0;
+}
+
+.characters-list {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 25vh;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.characters-card {
+    display: flex;
+    flex-direction: column;
+    width: 7vw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.character-button {
+    cursor: pointer;
+}
+
+.next-button img {
+    width: 50px;
+}
+
+.previous-button img {
+    width: 50px;
+}
+
+.characters-card[data-active] {
+    outline: 2px solid white;
+}
+
+.characters-card[data-active] .card-name {
+    background-color: white;
+    color: black;
+}
+
+.card-name {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.5vh 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.characters-card:hover {
+    outline: 2px solid white;
+    /* background-color: white; */
+}
+
+.characters-card:hover .card-name {
+    background-color: white;
+    color: black;
+}
+
+.responsive-character-button {
+    display: none;
+}
+
+.characters-footer {
+    scroll-snap-align: start;
+}
+
+@media screen and (max-width: 768px) {
+    .characters-detail {
+        width: 95%;
+    }
+
+    .characters-card {
+        width: 10vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .characters-detail {
+        /* width: 100vw; */
+        height: 85%;
+        background-position: 50%;
+        /* padding: 0; */
+        width: 100%;
+        /* background-color: black; */
+        color: white;
+    }
+
+    .characters-detail p {
+        -webkit-text-stroke: 0.04em black;
+    }
+
+    .characters-description {
+        display: none;
+        opacity: 0;
+    }
+
+    .characters-name {
+        margin-left: 4vw;
+        margin-top: 20vh;
+    }
+
+    .characters-card {
+        width: 15vw;
+    }
+    
+    .card-name {
+        font-size: 12px;
+    }
+
+    .character-button {
+        display: none;
+    }
+
+    .character-button-responsive {
+        display: block;
+    }
+
+    .character-button-responsive img {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 10px;
+        /* height: auto; */
+    }
+
+    .responsive-character-button {
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        height: 100%;
+        margin: 0 5vw;
+    }
+
+    .next-responsive-button img {
+        width: 50px;
+    }
+    
+    .previous-responsive-button img {
+        width: 50px;
+    }
+}

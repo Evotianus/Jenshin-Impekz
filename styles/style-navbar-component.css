@@ -1,0 +1,142 @@
+.navbar {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Components/Homepage/Navbar.png?raw=true);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh;
+    width: 100vw;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7vw;
+    z-index: 5;
+}
+
+.logo img {
+    width: 10vw;
+}
+
+.navbar img {
+    position: relative;
+}
+
+.navbar .menu-icon {
+    display: none;
+}
+
+.navbar .menu-list a {
+    color: white;
+    opacity: 0.75;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.navbar .menu-list a[data-active] {
+    opacity: 1;
+    border-bottom: 2px solid #FFCF0D;
+}
+
+.navbar .menu-list a:hover {
+    opacity: 1;
+    border-bottom: 2px solid #FFCF0D;
+}
+
+.navbar .menu-list ul {
+    display: flex;
+    gap: 3vw;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.menu-icon-list {
+    display: none;
+}
+
+@media screen and (max-width: 1140px) {
+    .navbar {
+        padding: 3vh 3vw;
+    }
+
+    .navbar .menu-list a {
+        font-size: 1.05rem;
+    }
+
+    .logo img {
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-container {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index: 5  ;
+    }
+
+    .navbar {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: none;
+        height: 10%;
+        width: 100vw;
+        padding: 3vh 5vw;
+    }
+
+    .navbar .menu-list {
+        display: none;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+        color: white;
+    }
+    
+    .navbar .menu-icon i {
+        font-size: 2rem;
+    }
+
+    .navbar .logo {
+        color: white;
+    }
+
+    .logo img {
+        width: 25vw;
+    }
+
+    .menu-icon-list-container {
+        position: relative;
+        width: 100vw;
+    }
+
+    .menu-icon-list {
+        top: -1000px;
+        padding: 2vh 4vw;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        position: absolute;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        font-size: 1.1em;
+        transition: all 0.5s;
+        width: 100%;
+    }
+
+    .menu-icon-list a {
+        color: white;
+        /* opacity: 0.75; */
+        text-decoration: none;
+    }
+
+    .menu-icon-list a[data-active] {
+        border-left: 2px solid #FFCF0D;
+        padding-left: 2vw;
+        opacity: 1;
+    }
+}
