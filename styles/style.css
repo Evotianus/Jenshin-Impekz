@@ -12,7 +12,7 @@ body {
     font-family: 'HYWenHei 85W';
     font-style: normal;
     font-weight: normal;
-    src: local('HYWenHei 85W'), url('https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Font/zhcn.woff') format('woff');
+    src: local('HYWenHei 85W'), url('https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Font/zhcn.woff') format('woff');
 }
 
 html {

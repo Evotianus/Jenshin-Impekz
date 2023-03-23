@@ -15,7 +15,7 @@
 
 .about-wrapper {
     position: relative;
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/About-Game/Background.jpg?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/About-Game/Background.jpg?raw=true);
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
@@ -73,7 +73,7 @@
 }
 
 .about-image img {
-    /* background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/About-Game/Image-1.jpg?raw=true); */
+    /* background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/About-Game/Image-1.jpg?raw=true); */
     /* background-size: cover; */
     width: 100%;
     height: 100%;

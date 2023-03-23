@@ -1,7 +1,7 @@
 /* Home Page - End */
 /* ================================================================================================================================ */
 .jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Homepage/Jumbotron/Jumbotron.jpg?raw=true);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Homepage/Jumbotron/Jumbotron.jpg?raw=true);
     background-size: cover;
     background-position: bottom;
     height: 100vh;
@@ -92,7 +92,7 @@
 
 .news {
     position: relative;
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Homepage/News/Background.png?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Homepage/News/Background.png?raw=true);
     background-size: cover;
     height: 100vh;
     display: flex;

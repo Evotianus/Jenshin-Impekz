@@ -28,19 +28,19 @@
 }
 
 .characters-mondstadt {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Background-Mondstadt.jpg?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Background-Mondstadt.jpg?raw=true);
 }
 
 .characters-liyue {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Background-Liyue.jpg?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Background-Liyue.jpg?raw=true);
 }
 
 .characters-inazuma {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Background-Inazuma.jpg?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Background-Inazuma.jpg?raw=true);
 }
 
 .characters-sumeru {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Background-Sumeru.jpg?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Background-Sumeru.jpg?raw=true);
 }
 
 .characters-region {
@@ -62,7 +62,7 @@
 .characters-detail {
     position: absolute;
     z-index: 2;
-    /* background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Chara    cter-1.png?raw=true); */
+    /* background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Chara    cter-1.png?raw=true); */
     background-size: cover;
     height: 90%;
     width: 80%;
