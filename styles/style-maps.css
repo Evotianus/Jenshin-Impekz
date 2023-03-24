@@ -26,7 +26,7 @@
 }
 
 .maps-teyvat {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Maps/Teyvat.jpg?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Teyvat.jpg?raw=true);
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -52,7 +52,7 @@
 }
 
 .maps-mondstadt {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Maps/Mondstadt.png?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Mondstadt.png?raw=true);
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -68,7 +68,7 @@
 }
 
 .maps-liyue {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Maps/Liyue.png?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Liyue.png?raw=true);
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -84,7 +84,7 @@
 }
 
 .maps-inazuma {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Maps/Inazuma.jpg?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Inazuma.jpg?raw=true);
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -100,7 +100,7 @@
 }
 
 .maps-sumeru {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Maps/Sumeru.png?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Sumeru.png?raw=true);
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -145,23 +145,23 @@
 }
 
 .map-detail-teyvat {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Maps/Teyvat-map.png?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Teyvat-map.png?raw=true);
 }
 
 .map-detail-mondstadt {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Maps/Mondstadt-map.jpg?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Mondstadt-map.jpg?raw=true);
 }
 
 .map-detail-liyue {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Maps/Liyue-map.png?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Liyue-map.png?raw=true);
 }
 
 .map-detail-inazuma {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Maps/Inazuma-map.png?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Inazuma-map.png?raw=true);
 }
 
 .map-detail-sumeru {
-    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Maps/Sumeru-map.png?raw=true);
+    background-image: url(https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Maps/Sumeru-map.png?raw=true);
 }
 
 .map-detail-teyvat[data-active] {

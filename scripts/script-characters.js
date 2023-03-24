@@ -16,11 +16,11 @@ const mondstadtDescription = [
 ]
 
 const mondstadtImage = [
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Mondstadt/Character-1.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Mondstadt/Character-2.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Mondstadt/Character-3.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Mondstadt/Character-4.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Mondstadt/Character-5.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Mondstadt/Character-1.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Mondstadt/Character-2.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Mondstadt/Character-3.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Mondstadt/Character-4.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Mondstadt/Character-5.png?raw=true",
 ]
 
 
@@ -144,11 +144,11 @@ const liyueDescription = [
 ]
 
 const liyueImage = [
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Liyue/Character-1.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Liyue/Character-2.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Liyue/Character-3.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Liyue/Character-4.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Liyue/Character-5.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Liyue/Character-1.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Liyue/Character-2.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Liyue/Character-3.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Liyue/Character-4.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Liyue/Character-5.png?raw=true",
 ]
 
 const liyueNextButton = document.querySelector(".liyue-next-button")
@@ -266,11 +266,11 @@ const inazumaDescription = [
 ]
 
 const inazumaImage = [
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Inazuma/Character-1.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Inazuma/Character-2.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Inazuma/Character-3.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Inazuma/Character-4.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Inazuma/Character-5.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Inazuma/Character-1.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Inazuma/Character-2.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Inazuma/Character-3.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Inazuma/Character-4.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Inazuma/Character-5.png?raw=true",
 ]
 
 const inazumaNextButton = document.querySelector(".inazuma-next-button")
@@ -388,11 +388,11 @@ const sumeruDescription = [
 ]
 
 const sumeruImage = [
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Sumeru/Character-1.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Sumeru/Character-2.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Sumeru/Character-3.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Sumeru/Character-4.png?raw=true",
-    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/assets/Characters/Sumeru/Character-5.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Sumeru/Character-1.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Sumeru/Character-2.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Sumeru/Character-3.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Sumeru/Character-4.png?raw=true",
+    "https://github.com/Evotianus/Jenshin-Impekz/blob/master/Assets/Characters/Sumeru/Character-5.png?raw=true",
 ]
 
 const sumeruNextButton = document.querySelector(".sumeru-next-button")
